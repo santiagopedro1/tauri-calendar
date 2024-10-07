@@ -1,44 +1,40 @@
 {
+	"$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+	"productName": "tauri-calendar",
+	"version": "2.0.0",
+	"identifier": "com.tauri-calendar.dev",
 	"build": {
-		"beforeDevCommand": "bun run dev",
-		"beforeBuildCommand": "bun run build",
-		"devPath": "http://localhost:1420",
-		"distDir": "../build"
+		"devUrl": "http://localhost:5173",
+		"frontendDist": "../build",
+		"beforeDevCommand": "bun dev",
+		"beforeBuildCommand": "bun run build"
 	},
-	"package": {
-		"productName": "tauri-calendar",
-		"version": "1.0.0"
-	},
-	"tauri": {
-		"allowlist": {
-			"all": false,
-			"shell": {
-				"all": false,
-				"open": true
-			}
-		},
+	"app": {
 		"windows": [
 			{
-				"title": "Tauri Calendar",
-				"width": 490,
-				"height": 430,
-				"resizable": false
+				"title": "tauri-calendar",
+				"width": 473,
+				"height": 425,
+				"maxWidth": 473,
+				"maxHeight": 425,
+				"minWidth": 473,
+				"minHeight": 425,
+				"decorations": false
 			}
 		],
 		"security": {
 			"csp": null
-		},
-		"bundle": {
-			"active": true,
-			"targets": "all",
-			"identifier": "com.tauri-calendar.dev",
-			"icon": [
-				"icons/32x32.png",
-				"icons/128x128.png",
-				"icons/128x128@2x.png",
-				"icons/icon.icns",
-				"icons/icon.ico"
-			]
 		}
+	},
+	"bundle": {
+		"active": true,
+		"targets": "all",
+		"icon": [
+			"icons/32x32.png",
+			"icons/128x128.png",
+			"icons/128x128@2x.png",
+			"icons/icon.icns",
+			"icons/icon.ico"
+		]
 	}
 }

@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+
+@theme {
+	--color-background: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-muted: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-muted-foreground: hsl(227, 43.689319491386414%, 79.8039197921753%); /* subtext1 */
+
+	--color-popover: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-popover-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-card: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-card-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-border: hsl(227, 14.73684161901474%, 37.254902720451355%); /* surface1 */
+	--color-input: hsl(227, 14.73684161901474%, 37.254902720451355%); /* surface1 */
+
+	--color-primary: hsl(316, 73.17073345184326%, 83.92156958580017%); /* accent - Pink */
+	--color-primary-foreground: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+
+	--color-secondary: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-secondary-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-accent: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-accent-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-destructive: hsl(359, 67.78523325920105%, 70.78431248664856%); /* red */
+	--color-destructive-foreground: hsl(231, 18.81188154220581%, 19.80392187833786%); /* mantle */
+
+	--color-ring: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--radius: 0;
+}
+
+:root {
+	--color-background: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-muted: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-muted-foreground: hsl(227, 43.689319491386414%, 79.8039197921753%); /* subtext1 */
+
+	--color-popover: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-popover-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-card: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+	--color-card-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-border: hsl(227, 14.73684161901474%, 37.254902720451355%); /* surface1 */
+	--color-input: hsl(227, 14.73684161901474%, 37.254902720451355%); /* surface1 */
+
+	--color-primary: hsl(316, 73.17073345184326%, 83.92156958580017%); /* accent - Pink */
+	--color-primary-foreground: hsl(229, 18.644067645072937%, 23.137255012989044%); /* base */
+
+	--color-secondary: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-secondary-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-accent: hsl(230, 15.584415197372437%, 30.19607961177826%); /* surface0 */
+	--color-accent-foreground: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--color-destructive: hsl(359, 67.78523325920105%, 70.78431248664856%); /* red */
+	--color-destructive-foreground: hsl(231, 18.81188154220581%, 19.80392187833786%); /* mantle */
+
+	--color-ring: hsl(227, 70.14925479888916%, 86.86274290084839%); /* text */
+
+	--radius: 0;
+}
+
+* {
+	@apply text-lg;
+}
+
+body {
+	background-color: var(--color-background);
+	color: var(--color-foreground);
+}
